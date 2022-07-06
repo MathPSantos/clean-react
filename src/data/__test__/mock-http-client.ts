@@ -1,9 +1,9 @@
-import { HttpPostClient } from './../protocols/httt/http-post-client';
+import { HttpPostClient, HttpPostOptions } from './../protocols/httt/http-post-client';
 export class HttpPostClientSpy implements HttpPostClient {
   url?: string;
 
-  async post (url: string): Promise<void> {
-    this.url = url
+  async post (options: HttpPostOptions): Promise<void> {
+    this.url = options.url
     return Promise.resolve()
   }
 }

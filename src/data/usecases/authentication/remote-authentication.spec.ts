@@ -22,4 +22,6 @@ describe('RemoteAuthentication', () => {
     await sut.auth()
     expect(httpPostClientSpy.url).toBe(url)
   });
+
+  it('', () => {})
 });
