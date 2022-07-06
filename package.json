@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "test": "jest --passWithNoTests",
-    "test:watch": "npm run jest -- --watch",
-    "test:staged": "npm run jest -- --findRelatedTests",
-    "test:ci": "npm run jest -- --coverage"
+    "test:watch": "npm run test -- --watch",
+    "test:staged": "npm run test -- --findRelatedTests",
+    "test:ci": "npm run test -- --coverage"
   },
   "devDependencies": {
     "@types/jest": "^27.5.1",
